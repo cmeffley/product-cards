@@ -1,23 +1,33 @@
 body {
-  background-color: lightgray;
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #448AFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
   
 }
 
 .product-container {
   display: flex;
   border: solid 20px black;
-
+  overflow: auto;
+  
 }
 
 .product-card img {
   height: 100px;
   margin: auto;
   display: block;
+  max-width: 100%;
 
 }
 
 .product-card {
   margin: 25px;
+  
 }
 
 .availability {
@@ -33,7 +43,26 @@ body {
 }
 
 h2 {
-  border: 1px solid lightblue;
+  border: 1px solid rgb(9, 21, 26);
   text-align: center;
   background-color: cadetblue;
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.derailleur {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.sold-out {
+  position: absolute;
+  top: 125px;
+  left: 50px;
+  z-index: 2;
 }
